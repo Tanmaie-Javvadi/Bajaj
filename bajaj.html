@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21BCE9010</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bajaj Finserv Health Challenge</h1>
+        <div class="input-section">
+            <label for="jsonInput">Enter JSON:</label>
+            <textarea id="jsonInput" placeholder='{"data": ["A", "C", "z"]}'></textarea>
+            <button id="submitBtn">Submit</button>
+            <p id="errorMsg"></p>
+        </div>
+        <div class="dropdown-section" style="display: none;">
+            <label for="responseOptions">Select Response Options:</label>
+            <select id="responseOptions" multiple>
+                <option value="alphabets">Alphabets</option>
+                <option value="numbers">Numbers</option>
+                <option value="highestLowercase">Highest Lowercase Alphabet</option>
+            </select>
+        </div>
+        <div class="result-section">
+            <h2>Response:</h2>
+            <div id="responseOutput"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
